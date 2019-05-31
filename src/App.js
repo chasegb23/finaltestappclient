@@ -52,9 +52,18 @@ class App extends Component {
           <div className="App">
               <header className="App-header">
                   <img src={logo} className="App-logo" alt="logo" />
-                  <h1 className="App-title">Welcome to React</h1>
+                  <h1 className="App-title">Test App</h1>
+                  <h2 className="App-intro">{this.state.posts}</h2>
               </header>
-              <p className="App-intro">{this.state.posts}</p>
+              <body>
+                <form>
+                  <label>
+                    Name:
+                    <input type="text" name="name" />
+                  </label>
+                  <input type="submit" value="Submit" />
+                </form>
+              </body>
           </div>
       );
   }
